@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">261842184069-suj4s8f6a2vag3237g621lvi6dik47rj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://taxiwala-5f6c6-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">261842184069</string>
+    <string name="google_api_key" translatable="false">AIzaSyA1quiFkYgGgDEnGnP6JNvxO-jnPK6mFgM</string>
+    <string name="google_app_id" translatable="false">1:261842184069:android:b418a43f2f09417efec6ec</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA1quiFkYgGgDEnGnP6JNvxO-jnPK6mFgM</string>
+    <string name="google_storage_bucket" translatable="false">taxiwala-5f6c6.appspot.com</string>
+    <string name="project_id" translatable="false">taxiwala-5f6c6</string>
+</resources>
