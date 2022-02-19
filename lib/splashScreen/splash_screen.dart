@@ -50,7 +50,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
             SizedBox(
               height: 8,
             ),
-            Text("WELCOME TO TAXIWALA DRIVERS APP")
+            Text("WELCOME  TAXIWALA DRIVERS APP")
           ],
         )),
       ),
