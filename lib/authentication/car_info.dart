@@ -1,5 +1,9 @@
+import 'package:drivers_app/global/global.dart';
 import 'package:drivers_app/mainScreens/main_screen.dart';
+import 'package:drivers_app/splashScreen/splash_screen.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CarInfoScreen extends StatefulWidget {
@@ -13,12 +17,33 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
   TextEditingController TaxiModeltextEditingController =
       TextEditingController();
 
-  TextEditingController TaxiNumberEditingController = TextEditingController();
+  TextEditingController TaxiNumbertextEditingController =
+      TextEditingController();
   TextEditingController TaxiColortextEditingController =
       TextEditingController();
 
   List<String> carTypesList = ["Car", "Auto", "Bike"];
   String? selectedCartype;
+
+  saveCarInfo() {
+    Map driverCarInfoMap = {
+      "car_color": TaxiColortextEditingController.text.trim(),
+      "car_number": TaxiNumbertextEditingController.text.trim(),
+      "car_model": TaxiModeltextEditingController.text.trim(),
+      "type": selectedCartype,
+    };
+
+    DatabaseReference driversRef =
+        FirebaseDatabase.instance.ref().child("drivers");
+    driversRef
+        .child(currentFirebaseUser!.uid)
+        .child("car_details")
+        .set(driverCarInfoMap);
+
+    Fluttertoast.showToast(msg: "details have been saved");
+    Navigator.push(
+        context, MaterialPageRoute(builder: (c) => const MySplashScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +78,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                     labelStyle: TextStyle(color: Colors.black, fontSize: 16)),
               ),
               TextField(
-                controller: TaxiNumberEditingController,
+                controller: TaxiNumbertextEditingController,
                 style: const TextStyle(color: Colors.black, fontSize: 18),
                 decoration: const InputDecoration(
                     labelText: "Taxi Vehicle no",
@@ -104,8 +129,12 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (c) => MainScreen()));
+                    if (TaxiColortextEditingController.text.isNotEmpty &&
+                        TaxiModeltextEditingController.text.isNotEmpty &&
+                        TaxiNumbertextEditingController.text.isNotEmpty &&
+                        selectedCartype != null) {
+                      saveCarInfo();
+                    }
                   },
                   child: Text(
                     "Save Details",

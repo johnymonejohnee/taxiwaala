@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\study\flu\Riders\drivers_app\build\windows\CMakeFiles\586bc8546f743895b4574b4e45adb030\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{99F25E33-06A6-34EF-94B6-73E4298F52D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

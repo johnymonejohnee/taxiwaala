@@ -1,0 +1,10 @@
+^D:\STUDY\FLU\RIDERS\DRIVERS_APP\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/study/flu/Riders/drivers_app/windows -BD:/study/flu/Riders/drivers_app/build/windows --check-stamp-file D:/study/flu/Riders/drivers_app/build/windows/runner/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

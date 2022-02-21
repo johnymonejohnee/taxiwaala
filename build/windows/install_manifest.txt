@@ -1,0 +1,13 @@
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/icudtl.dat
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/flutter_windows.dll
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/images/aut.png
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/images/auto.png
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/images/logo1.png
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/images/splash.png
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/NOTICES
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/study/flu/Riders/drivers_app/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
